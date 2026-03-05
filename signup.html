@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mela</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+<body style="background-color:lightsalmon">
+
+<header class="site-header">
+
+<div class="logo">መላ&trade;</div>
+
+<nav class="main-nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signup.html">Services</a></li>
+    </ul>      
+</nav>
+</header>
+<style>
+    .site-header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 40px;
+        background-color:darkred;
+        position:static;
+        top:0;
+}
+    .logo{
+    color:lightsalmon;
+    font-size:28px;
+    font-weight:bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    .main-nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+    .main-nav a{
+    text-decoration:none;
+    color:lightsalmon;
+    font-weight:bold;
+} 
+    .main-nav a:hover{
+    text-decoration: underline;
+}
+</style>
+
+
+<h1 align="center">Creator's Signup Form</h1>
+<form  class=form action="signup_process.js" method="post">
+   
+    <label for="fname" required >Full Name:</label><br>
+    <input type="text" id="fname" placeholder="visual studio" name="fname" required><br><br>
+    
+    <label for="phone-number" required>Phone Number:</label><br>
+    <input type="tel" id="phone-number" placeholder="09-12-34-56-78" name="phone-number"
+    pattern="[0][9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email"  placeholder="example@domain.com" required><br><br>
+    
+    <label for="password" required>Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="This_is_mypassword" required><br><br>
+    
+    <label for="file">Upload Profile Picture:</label><br>
+    <input type="file" id="file" name="file" accept="image/png,image/jpeg" required><br><br>
+   
+    <label for="payment" id="pm">Payment Method</label><br>
+    <select id="payment" placeholder="payment plan" required>
+            <option value="telebirr">Telebirr</option>
+            <option value="cbe-birr">Cbe-birr</option>
+            <option value="bank-transfer">Bank Transfer</option>
+    </select>
+    <br><br><button type="submit" id="sbtn" >Sign Up</button>
+</form>
+<style>
+    .form{
+        margin-left:25%;
+        margin-top:10px;
+        color:darkred;
+    }
+    #payment{
+        width:400px;
+        height:35px;
+    }
+    input,select{
+        width:300px;
+        height:10px;
+        border-radius:5px;
+        padding:10px;
+    }
+    #sbtn{
+        padding:2px;
+        background-color:darkred;
+        color:lightsalmon;
+        margin-top: 10px;
+        margin-bottom:2px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height:30px;
+        width:120px;
+        border-radius: 20px;
+        font-weight: bolder;
+        font-size: large;
+    }
+    #ft{
+        margin-top:100px;
+        margin-bottom:0px;
+    }
+    .site-footer{
+        margin-top: auto;
+        color:lightsalmon;
+        background-color: darkred;
+    }
+</style>
+<br><br><br>
+<div class="div"><footer class="site-footer" align="center" id="ft">
+    &copy; 2018 Mela Marketplace &trade; All rights reserved.
+</footer>
+</div>
+</body>
+</html>
