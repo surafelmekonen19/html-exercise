@@ -1,2 +1,2 @@
-# html-exercise
-This is my second website UI work created a while ago while exercising with HTML5 and CSS3
+# html-exercise [unfinished]
+This is my second website UI work which I created a while ago while exercising with HTML5 and CSS3
